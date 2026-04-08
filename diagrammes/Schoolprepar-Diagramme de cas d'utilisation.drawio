@@ -1,0 +1,154 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram name="Page-1" id="UpyppwcGi4OJvMakXqqu">
+    <mxGraphModel dx="1484" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="640" y="200" width="440" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-2" value="Etudiant" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="330" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-4" value="recherche des formations" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-5" value="S&#39;auto evaluer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="330" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-6" value="Gérer son orientation" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="400" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-7" value="Interagir avec son environnement" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="450" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-9" value="Solliciter un accompagement&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="540" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-10" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="340" as="sourcePoint" />
+            <mxPoint x="500" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-12" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="360" as="sourcePoint" />
+            <mxPoint x="530" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-13" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="390" as="sourcePoint" />
+            <mxPoint x="530" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-14" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="410" as="sourcePoint" />
+            <mxPoint x="530" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-15" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="430" as="sourcePoint" />
+            <mxPoint x="530" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-16" value="Cas d&#39;uitlisation Etudiant" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="625" y="168" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-17" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="640" y="740" width="440" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-18" value="Conseiller" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="827" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-19" value="Gérer son pofil d&#39;expert" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="747" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-20" value="Assurer le mentoriat&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="830" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-21" value="Recevoir des feedback" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="950" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-24" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="850" as="sourcePoint" />
+            <mxPoint x="530" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-25" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="880" as="sourcePoint" />
+            <mxPoint x="530" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-26" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="910" as="sourcePoint" />
+            <mxPoint x="690" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-27" value="Cas d&#39;utilisation Conseiller" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="640" y="698" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-28" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1350" width="440" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-29" value="Gestion des CRUD" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="1380" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-30" value="Moderer les contenus" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1470" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-31" value="Annalyser les activités" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1580" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-32" value="Attribuer les rôles" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1710" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-33" value="Administrateur" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1530" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-34" value="Gérer son profil&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="250" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-35" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="350" as="sourcePoint" />
+            <mxPoint x="530" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-36" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.003;entryY=0.608;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="1560" as="sourcePoint" />
+            <mxPoint x="470" y="1510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-37" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="1570" as="sourcePoint" />
+            <mxPoint x="470" y="1530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-38" value="" style="endArrow=none;html=1;rounded=0;entryX=0.02;entryY=0.338;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="1590" as="sourcePoint" />
+            <mxPoint x="480" y="1540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-39" value="" style="endArrow=none;html=1;rounded=0;entryX=0.04;entryY=0.353;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Vzxw-B_msHaYrJOiyrwT-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="1610" as="sourcePoint" />
+            <mxPoint x="500" y="1560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzxw-B_msHaYrJOiyrwT-40" value="Cas d&#39;utilisation Administrateur" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="665" y="1308" width="190" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
