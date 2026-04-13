@@ -1,0 +1,34 @@
+{# templates/front/filiere/index.html.twig #}
+{% extends 'front/base.html.twig' %}
+
+{% block titre %}Liste des filières - SchoolPrepar{% endblock %}
+
+{% block contenuPrincipal %}
+<section class="home_course section-padding">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Les Filières</h2>
+            <p>Découvrez toutes les filières disponibles sur SchoolPrepar</p>
+        </div>
+
+        <div class="row mt-4">
+            {% for filiere in filieres %}
+            <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+                <div class="card h-100">
+                    <img src="{{ asset('front/img/filieres/' ~ filiere.image) }}" class="card-img-top" alt="{{ filiere.nom }}" style="height: 200px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h4 class="card-title">{{ filiere.nom }}</h4>
+                        <p class="card-text">{{ filiere.description }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ path('filiere_show', {'id': filiere.id}) }}" class="btn_one">
+                            Voir le détail <i class="ti-arrow-top-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

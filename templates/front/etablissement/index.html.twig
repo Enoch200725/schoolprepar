@@ -1,0 +1,31 @@
+{# templates/front/etablissement/index.html.twig #}
+{% extends 'front/base.html.twig' %}
+
+{% block titre %}Liste des établissements - SchoolPrepar{% endblock %}
+
+{% block contenuPrincipal %}
+<section class="home_course section-padding">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Les Établissements</h2>
+            <p>Découvrez tous les établissements partenaires de SchoolPrepar</p>
+        </div>
+
+        <div class="row mt-4">
+            {% for etablissement in etablissements %}
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+                <div class="single_course">
+                    <div class="single_c_img">
+                        <img src="{{ asset('front/img/etablissements/' ~ etablissement.image) }}" class="img-fluid" alt="{{ etablissement.nom }}" />
+                        <span>{{ etablissement.ville }}</span>
+                    </div>
+                    <h4>{{ etablissement.nom }}</h4>
+                    <p><span class="ti-location-pin"> </span> {{ etablissement.ville }}</p>
+                    <p>{{ etablissement.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

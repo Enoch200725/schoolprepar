@@ -1,0 +1,47 @@
+{# templates/admin/partials/aside.html.twig #}
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+
+    <a href="{{ path('admin_dashboard') }}" class="brand-link">
+        <span class="brand-text font-weight-light">
+            <strong>SchoolPrepar</strong> Admin
+        </span>
+    </a>
+
+    <div class="sidebar">
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+                <img src="{{ asset('admin/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+                <a href="#" class="d-block">Administrateur</a>
+            </div>
+        </div>
+
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+
+                <li class="nav-item">
+                    <a href="{{ path('admin_dashboard') }}" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ path('admin_filiere_index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-graduation-cap"></i>
+                        <p>Gestion des filières</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ path('admin_etablissement_index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-university"></i>
+                        <p>Gestion des établissements</p>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</aside>

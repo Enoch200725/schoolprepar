@@ -1,0 +1,197 @@
+{# templates/front/home.html.twig #}
+{% extends 'front/base.html.twig' %}
+
+{% block titre %}Accueil - SchoolPrepar{% endblock %}
+
+{% block contenuPrincipal %}
+
+    {# START HOME #}
+    <section class="home_bg hb_height" style="background-image: url({{ asset('front/img/bg/home-bg.jpg') }});  background-size:cover; background-position: center center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 col-xs-12">
+                    <div class="hero-text ht_top">
+                        <h1><span>SchoolPrepar</span> La plateforme de préparation scolaire</h1>
+                        <p>Trouvez les meilleures filières et établissements pour préparer votre avenir scolaire au Togo.</p>
+                    </div>
+                    <div class="home_sb">
+                        <div class="banner_subs">
+                            <a href="{{ path('filiere_index') }}" class="subscribe__btn">Voir les filières</a>
+                            <a href="{{ path('etablissement_index') }}" class="btn_one ms-2">Voir les établissements</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-xs-12">
+                    <div class="hero-text-img">
+                        <img src="{{ asset('front/img/home-img2.png') }}" class="img-fluid" alt="" />
+                        <div class="home_ps">
+                            <span class="ti-user"></span>
+                            <h2>4500+</h2>
+                            <p>Étudiants actifs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# END HOME #}
+
+    {# START COUNTER #}
+    <section class="count_area counter_feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single-counter">
+                        <span class="ti-folder sc_one"></span>
+                        <h2 class="counter-num">12</h2>
+                        <p>Filières disponibles</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single-counter">
+                        <span class="ti-medall-alt sc_two"></span>
+                        <h2 class="counter-num">25</h2>
+                        <p>Établissements partenaires</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single-counter">
+                        <span class="ti-id-badge sc_three"></span>
+                        <h2 class="counter-num">684</h2>
+                        <p>Étudiants certifiés</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single-counter">
+                        <span class="ti-user sc_four"></span>
+                        <h2 class="counter-num">4500</h2>
+                        <p>Étudiants inscrits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# END COUNTER #}
+
+    {# START CATEGORY #}
+    <section class="top_cat__area section-padding" style="background-image: url({{ asset('front/img/bg/shape-1.png') }});  background-size:cover; background-position: center center;">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Commencez votre parcours avec nous</h2>
+                <p>Nous offrons une nouvelle approche aux paradigmes d'apprentissage les plus fondamentaux. Choisissez parmi une large gamme d'options d'apprentissage.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single_tp">
+                        <span class="sc_one">01</span>
+                        <h3>Enseignants <br />Experts</h3>
+                        <p>Des enseignants qualifiés et expérimentés pour vous accompagner.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single_tp">
+                        <span class="sc_two">02</span>
+                        <h3>Éducation <br />de Qualité</h3>
+                        <p>Une éducation de qualité adaptée aux besoins des étudiants.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single_tp">
+                        <span class="sc_three">03</span>
+                        <h3>Apprentissage <br />à Distance</h3>
+                        <p>Apprenez depuis chez vous avec nos ressources en ligne.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single_tp">
+                        <span class="sc_four">04</span>
+                        <h3>Support <br />Permanent</h3>
+                        <p>Un support disponible pour vous aider à tout moment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# END CATEGORY #}
+
+    {# START ABOUT #}
+    <section class="ab_area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 col-xs-12">
+                    <div class="ab_img">
+                        <img src="{{ asset('front/img/about1.png') }}" class="img-fluid" alt="image">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-xs-12">
+                    <div class="ab_content">
+                        <h2>Nous accompagnons les étudiants vers leur réussite scolaire</h2>
+                        <p>SchoolPrepar est la plateforme idéale pour trouver les meilleures filières et établissements au Togo.</p>
+                        <ul>
+                            <li><span class="ti-check"></span> Accès à toutes les <b>filières disponibles</b></li>
+                            <li><span class="ti-check"></span> Liste complète des établissements partenaires</li>
+                            <li><span class="ti-check"></span> Trouvez la formation qui vous correspond</li>
+                        </ul>
+                        <a class="btn_one" href="{{ path('filiere_index') }}">Voir toutes les filières <i class="ti-arrow-top-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# END ABOUT #}
+
+    {# START FILIÈRES #}
+    <section class="home_course section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-6 col-xs-12">
+                    <div class="section-title">
+                        <h2>Découvrez nos <b>filières</b> <br />disponibles sur SchoolPrepar</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="cour_btn">
+                        <a href="{{ path('filiere_index') }}" class="btn_one">Voir toutes les filières <i class="ti-arrow-top-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single_course">
+                        <div class="single_c_img">
+                            <img src="{{ asset('front/img/course/1.png') }}" class="img-fluid" alt="course-image" />
+                            <span>Informatique</span>
+                        </div>
+                        <h4><a href="{{ path('filiere_index') }}">Génie Logiciel</a></h4>
+                        <p><span class="ti-book"> </span> Formation complète</p>
+                        <div class="price">iP Net Institute</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single_course">
+                        <div class="single_c_img">
+                            <img src="{{ asset('front/img/course/2.png') }}" class="img-fluid" alt="course-image" />
+                            <span>Web</span>
+                        </div>
+                        <h4><a href="{{ path('filiere_index') }}">Web et Internet Mobile</a></h4>
+                        <p><span class="ti-book"> </span> Formation complète</p>
+                        <div class="price">iP Net Institute</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single_course">
+                        <div class="single_c_img">
+                            <img src="{{ asset('front/img/course/3.png') }}" class="img-fluid" alt="course-image" />
+                            <span>Réseaux</span>
+                        </div>
+                        <h4><a href="{{ path('filiere_index') }}">Réseaux et Télécommunications</a></h4>
+                        <p><span class="ti-book"> </span> Formation complète</p>
+                        <div class="price">iP Net Institute</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# END FILIÈRES #}
+
+{% endblock %}

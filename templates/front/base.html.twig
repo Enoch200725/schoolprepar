@@ -1,0 +1,42 @@
+{# templates/front/base.html.twig #}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block titre %}SchoolPrepar{% endblock %}</title>
+
+    <link rel="stylesheet" href="{{ asset('front/bootstrap/css/bootstrap.min.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('front/fonts/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/owlcarousel/css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/owlcarousel/css/owl.theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/style.css') }}">
+
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+
+    {% block nav %}
+        {% include 'front/partials/nav.html.twig' %}
+    {% endblock %}
+
+    {% block contenuPrincipal %}{% endblock %}
+
+    {% block footer %}
+        {% include 'front/partials/footer.html.twig' %}
+    {% endblock %}
+
+    <script src="{{ asset('front/js/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ asset('front/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('front/owlcarousel/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('front/js/wow.min.js') }}"></script>
+    <script src="{{ asset('front/js/scripts.js') }}"></script>
+
+    {% block javascripts %}{% endblock %}
+
+</body>
+</html>
