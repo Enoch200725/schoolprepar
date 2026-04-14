@@ -27,18 +27,109 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="{{ path('admin_filiere_index') }}" class="nav-link">
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-graduation-cap"></i>
-                        <p>Gestion des filières</p>
+                        <p>Filières <i class="fas fa-angle-left right"></i></p>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ path('app_filiere_index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Liste des filières</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ path('app_filiere_new') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Ajouter une filière</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
-                <li class="nav-item">
-                    <a href="{{ path('admin_etablissement_index') }}" class="nav-link">
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-university"></i>
-                        <p>Gestion des établissements</p>
+                        <p>Établissements <i class="fas fa-angle-left right"></i></p>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ path('app_etablissement_index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Liste des établissements</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ path('app_etablissement_new') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Ajouter un établissement</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-user-graduate"></i>
+                        <p>Étudiants <i class="fas fa-angle-left right"></i></p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ path('app_etudiant_index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Liste des étudiants</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ path('app_etudiant_new') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Ajouter un étudiant</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-chalkboard-teacher"></i>
+                        <p>Enseignants <i class="fas fa-angle-left right"></i></p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ path('app_enseignant_index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Liste des enseignants</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ path('app_enseignant_new') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Ajouter un enseignant</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-user-tie"></i>
+                        <p>Conseillers <i class="fas fa-angle-left right"></i></p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ path('app_conseiller_index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Liste des conseillers</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ path('app_conseiller_new') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Ajouter un conseiller</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
             </ul>

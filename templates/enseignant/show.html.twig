@@ -1,0 +1,49 @@
+{# templates/enseignant/show.html.twig #}
+{% extends 'admin/base.html.twig' %}
+
+{% block titre %}Détail enseignant - Admin{% endblock %}
+{% block page_title %}Détail de l'enseignant{% endblock %}
+
+{% block contenuPrincipal %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Informations de l'enseignant</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>ID</th>
+                        <td>{{ enseignant.id }}</td>
+                    </tr>
+                    <tr>
+                        <th>Nom</th>
+                        <td>{{ enseignant.nom }}</td>
+                    </tr>
+                    <tr>
+                        <th>Prénom</th>
+                        <td>{{ enseignant.prenom }}</td>
+                    </tr>
+                    <tr>
+                        <th>Cours</th>
+                        <td>{{ enseignant.cours }}</td>
+                    </tr>
+                    <tr>
+                        <th>Code</th>
+                        <td>{{ enseignant.code }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-footer">
+                <a href="{{ path('app_enseignant_index') }}" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Retour à la liste
+                </a>
+                <a href="{{ path('app_enseignant_edit', {'id': enseignant.id}) }}" class="btn btn-warning">
+                    <i class="fas fa-edit"></i> Modifier
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

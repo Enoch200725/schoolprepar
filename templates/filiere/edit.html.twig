@@ -1,0 +1,35 @@
+{# templates/filiere/edit.html.twig #}
+{% extends 'admin/base.html.twig' %}
+
+{% block titre %}Modifier une filière - Admin{% endblock %}
+{% block page_title %}Modifier la filière{% endblock %}
+
+{% block contenuPrincipal %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Formulaire de modification</h3>
+            </div>
+            <div class="card-body">
+                {{ include('filiere/_form.html.twig') }}
+            </div>
+            <div class="card-footer">
+                <a href="{{ path('app_filiere_index') }}" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Retour à la liste
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header bg-danger">
+                <h3 class="card-title text-white">Zone de suppression</h3>
+            </div>
+            <div class="card-body">
+                {{ include('filiere/_delete_form.html.twig') }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

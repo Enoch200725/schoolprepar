@@ -1,0 +1,25 @@
+{# templates/enseignant/new.html.twig #}
+{% extends 'admin/base.html.twig' %}
+
+{% block titre %}Nouvel enseignant - Admin{% endblock %}
+{% block page_title %}Ajouter un enseignant{% endblock %}
+
+{% block contenuPrincipal %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Formulaire d'ajout</h3>
+            </div>
+            <div class="card-body">
+                {{ include('enseignant/_form.html.twig') }}
+            </div>
+            <div class="card-footer">
+                <a href="{{ path('app_enseignant_index') }}" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Retour à la liste
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{# templates/etablissement/show.html.twig #}
+{% extends 'admin/base.html.twig' %}
+
+{% block titre %}Détail établissement - Admin{% endblock %}
+{% block page_title %}Détail de l'établissement{% endblock %}
+
+{% block contenuPrincipal %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Informations de l'établissement</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>ID</th>
+                        <td>{{ etablissement.id }}</td>
+                    </tr>
+                    <tr>
+                        <th>Nom</th>
+                        <td>{{ etablissement.nom }}</td>
+                    </tr>
+                    <tr>
+                        <th>Ville</th>
+                        <td>{{ etablissement.ville }}</td>
+                    </tr>
+                    <tr>
+                        <th>Adresse</th>
+                        <td>{{ etablissement.adresse }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-footer">
+                <a href="{{ path('app_etablissement_index') }}" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Retour à la liste
+                </a>
+                <a href="{{ path('app_etablissement_edit', {'id': etablissement.id}) }}" class="btn btn-warning">
+                    <i class="fas fa-edit"></i> Modifier
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

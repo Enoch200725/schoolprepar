@@ -1,0 +1,65 @@
+{# templates/etudiant/show.html.twig #}
+{% extends 'admin/base.html.twig' %}
+
+{% block titre %}Détail étudiant - Admin{% endblock %}
+{% block page_title %}Détail de l'étudiant{% endblock %}
+
+{% block contenuPrincipal %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Informations de l'étudiant</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>ID</th>
+                        <td>{{ etudiant.id }}</td>
+                    </tr>
+                    <tr>
+                        <th>Nom</th>
+                        <td>{{ etudiant.nom }}</td>
+                    </tr>
+                    <tr>
+                        <th>Prénom</th>
+                        <td>{{ etudiant.prenom }}</td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td>{{ etudiant.age }}</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>{{ etudiant.email }}</td>
+                    </tr>
+                    <tr>
+                        <th>Adresse</th>
+                        <td>{{ etudiant.adresse }}</td>
+                    </tr>
+                    <tr>
+                        <th>Filière</th>
+                        <td>{{ etudiant.filiere.nom }}</td>
+                    </tr>
+                    <tr>
+                        <th>Établissement</th>
+                        <td>{{ etudiant.etablissement.nom }}</td>
+                    </tr>
+                    <tr>
+                        <th>Conseiller</th>
+                        <td>{{ etudiant.conseiller.nom }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-footer">
+                <a href="{{ path('app_etudiant_index') }}" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Retour à la liste
+                </a>
+                <a href="{{ path('app_etudiant_edit', {'id': etudiant.id}) }}" class="btn btn-warning">
+                    <i class="fas fa-edit"></i> Modifier
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
