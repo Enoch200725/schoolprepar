@@ -10,18 +10,17 @@
             <h2>Les Établissements</h2>
             <p>Découvrez tous les établissements partenaires de SchoolPrepar</p>
         </div>
-
         <div class="row mt-4">
             {% for etablissement in etablissements %}
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div class="single_course">
-                    <div class="single_c_img">
-                        <img src="{{ asset('front/img/etablissements/' ~ etablissement.image) }}" class="img-fluid" alt="{{ etablissement.nom }}" />
-                        <span>{{ etablissement.ville }}</span>
+            <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+                <div class="card h-100">
+                    <img src="{{ asset('front/img/etablissements/' ~ etablissement.nom ~ '.jpg') }}" class="card-img-top" alt="{{ etablissement.nom }}" style="height: 200px; object-fit: cover;"
+                         onerror="this.src='{{ asset('front/img/about1.png') }}'" />
+                    <div class="card-body">
+                        <h4 class="card-title">{{ etablissement.nom }}</h4>
+                        <p class="card-text"><span class="ti-location-pin"></span> {{ etablissement.ville }}</p>
+                        <p class="card-text">{{ etablissement.adresse }}</p>
                     </div>
-                    <h4>{{ etablissement.nom }}</h4>
-                    <p><span class="ti-location-pin"> </span> {{ etablissement.ville }}</p>
-                    <p>{{ etablissement.description }}</p>
                 </div>
             </div>
             {% endfor %}

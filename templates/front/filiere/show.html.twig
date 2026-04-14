@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 mb-3">
-                <a href="{{ path('filiere_index') }}" class="btn_one">
+                <a href="{{ path('front_filiere_index') }}" class="btn_one">
                     &larr; Retour aux filières
                 </a>
             </div>
@@ -16,19 +16,20 @@
         <div class="row">
             <div class="col-lg-6 col-sm-12">
                 <div class="ab_img">
-                    <img src="{{ asset('front/img/filieres/' ~ filiere.image) }}" class="img-fluid" alt="{{ filiere.nom }}" />
+                    <img src="{{ asset('front/img/course/1.png') }}" class="img-fluid" alt="{{ filiere.nom }}" />
                 </div>
             </div>
             <div class="col-lg-6 col-sm-12">
                 <div class="ab_content">
                     <h2>{{ filiere.nom }}</h2>
-                    <p>{{ filiere.description }}</p>
+                    <p><strong>Code :</strong> {{ filiere.code }}</p>
+                    <p><strong>Crédit :</strong> {{ filiere.credit }}</p>
                     <ul>
                         <li><span class="ti-check"></span> Formation de qualité</li>
                         <li><span class="ti-check"></span> Enseignants expérimentés</li>
                         <li><span class="ti-check"></span> Débouchés professionnels</li>
                     </ul>
-                    <a class="btn_one" href="{{ path('etablissement_index') }}">
+                    <a class="btn_one" href="{{ path('front_etablissement_index') }}">
                         Voir les établissements <i class="ti-arrow-top-right"></i>
                     </a>
                 </div>

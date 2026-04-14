@@ -10,18 +10,19 @@
             <h2>Les Filières</h2>
             <p>Découvrez toutes les filières disponibles sur SchoolPrepar</p>
         </div>
-
         <div class="row mt-4">
             {% for filiere in filieres %}
             <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
                 <div class="card h-100">
-                    <img src="{{ asset('front/img/filieres/' ~ filiere.image) }}" class="card-img-top" alt="{{ filiere.nom }}" style="height: 200px; object-fit: cover;" />
+                    <img src="{{ asset('front/img/filieres/' ~ filiere.nom ~ '.jpg') }}" class="card-img-top" alt="{{ filiere.nom }}" style="height: 200px; object-fit: cover;"
+                         onerror="this.src='{{ asset('front/img/course/1.png') }}'" />
                     <div class="card-body">
                         <h4 class="card-title">{{ filiere.nom }}</h4>
-                        <p class="card-text">{{ filiere.description }}</p>
+                        <p class="card-text"><strong>Code :</strong> {{ filiere.code }}</p>
+                        <p class="card-text"><strong>Crédit :</strong> {{ filiere.credit }}</p>
                     </div>
                     <div class="card-footer">
-                        <a href="{{ path('filiere_show', {'id': filiere.id}) }}" class="btn_one">
+                        <a href="{{ path('front_filiere_show', {'id': filiere.id}) }}" class="btn_one">
                             Voir le détail <i class="ti-arrow-top-right"></i>
                         </a>
                     </div>

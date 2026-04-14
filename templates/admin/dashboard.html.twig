@@ -15,12 +15,11 @@
             <div class="icon">
                 <i class="fas fa-graduation-cap"></i>
             </div>
-            <a href="{{ path('admin_filiere_index') }}" class="small-box-footer">
+            <a href="{{ path('app_filiere_index') }}" class="small-box-footer">
                 Gérer les filières <i class="fas fa-arrow-circle-right"></i>
             </a>
         </div>
     </div>
-
     <div class="col-lg-6 col-6">
         <div class="small-box bg-success">
             <div class="inner">
@@ -30,7 +29,7 @@
             <div class="icon">
                 <i class="fas fa-university"></i>
             </div>
-            <a href="{{ path('admin_etablissement_index') }}" class="small-box-footer">
+            <a href="{{ path('app_etablissement_index') }}" class="small-box-footer">
                 Gérer les établissements <i class="fas fa-arrow-circle-right"></i>
             </a>
         </div>
@@ -49,30 +48,22 @@
                         <tr>
                             <th>ID</th>
                             <th>Nom</th>
-                            <th>Description</th>
+                            <th>Code</th>
                         </tr>
                     </thead>
                     <tbody>
+                        {% for filiere in filieres %}
                         <tr>
-                            <td>1</td>
-                            <td>Génie Logiciel</td>
-                            <td>Formation en développement logiciel</td>
+                            <td>{{ filiere.id }}</td>
+                            <td>{{ filiere.nom }}</td>
+                            <td>{{ filiere.code }}</td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Web et Internet Mobile</td>
-                            <td>Formation en développement web et mobile</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Réseaux et Télécommunications</td>
-                            <td>Formation en réseaux informatiques</td>
-                        </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div>
             <div class="card-footer">
-                <a href="{{ path('admin_filiere_index') }}" class="btn btn-primary btn-sm">
+                <a href="{{ path('app_filiere_index') }}" class="btn btn-primary btn-sm">
                     Voir toutes les filières
                 </a>
             </div>
