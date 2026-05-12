@@ -41,6 +41,14 @@
                                 <a href="{{ path('app_conseiller_edit', {'id': conseiller.id}) }}" class="btn btn-warning btn-sm">
                                     <i class="fas fa-edit"></i>
                                 </a>
+                                <form method="post" action="{{ path('app_conseiller_delete', {'id': conseiller.id}) }}"
+                                      style="display:inline-block"
+                                      onsubmit="return confirm('Voulez-vous vraiment supprimer ce conseiller ?')">
+                                    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ conseiller.id) }}">
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     {% else %}

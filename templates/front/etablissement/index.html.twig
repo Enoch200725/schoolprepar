@@ -14,8 +14,11 @@
             {% for etablissement in etablissements %}
             <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
                 <div class="card h-100">
-                    <img src="{{ asset('front/img/etablissements/' ~ etablissement.nom ~ '.jpg') }}" class="card-img-top" alt="{{ etablissement.nom }}" style="height: 200px; object-fit: cover;"
-                         onerror="this.src='{{ asset('front/img/about1.png') }}'" />
+                    {% if etablissement.image %}
+                        <img src="{{ etablissement.image }}" class="card-img-top" alt="{{ etablissement.nom }}" style="height: 200px; object-fit: cover;" />
+                    {% else %}
+                        <img src="{{ asset('front/img/about1.png') }}" class="card-img-top" alt="{{ etablissement.nom }}" style="height: 200px; object-fit: cover;" />
+                    {% endif %}
                     <div class="card-body">
                         <h4 class="card-title">{{ etablissement.nom }}</h4>
                         <p class="card-text"><span class="ti-location-pin"></span> {{ etablissement.ville }}</p>

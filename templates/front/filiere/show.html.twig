@@ -16,7 +16,11 @@
         <div class="row">
             <div class="col-lg-6 col-sm-12">
                 <div class="ab_img">
-                    <img src="{{ asset('front/img/course/1.png') }}" class="img-fluid" alt="{{ filiere.nom }}" />
+                    {% if filiere.image %}
+                        <img src="{{ filiere.image }}" class="img-fluid" alt="{{ filiere.nom }}" style="width:100%; object-fit:cover;" />
+                    {% else %}
+                        <img src="{{ asset('front/img/course/1.png') }}" class="img-fluid" alt="{{ filiere.nom }}" />
+                    {% endif %}
                 </div>
             </div>
             <div class="col-lg-6 col-sm-12">

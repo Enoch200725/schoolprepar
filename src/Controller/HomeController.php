@@ -11,9 +11,12 @@ use Symfony\Component\Routing\Attribute\Route;
 final class HomeController extends AbstractController
 {
     #[Route('/', name: 'home')]
-    public function index(): Response
+    public function index(FiliereRepository $filiereRepository): Response
     {
-        return $this->render('front/home.html.twig');
+        $filieres = $filiereRepository->findAll();
+        return $this->render('front/home.html.twig', [
+            'filieres' => $filieres,
+        ]);
     }
 
     #[Route('/filieres', name: 'front_filiere_index')]

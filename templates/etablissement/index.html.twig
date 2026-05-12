@@ -41,6 +41,14 @@
                                 <a href="{{ path('app_etablissement_edit', {'id': etablissement.id}) }}" class="btn btn-warning btn-sm">
                                     <i class="fas fa-edit"></i>
                                 </a>
+                                <form method="post" action="{{ path('app_etablissement_delete', {'id': etablissement.id}) }}"
+                                      style="display:inline-block"
+                                      onsubmit="return confirm('Voulez-vous vraiment supprimer cet établissement ?')">
+                                    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ etablissement.id) }}">
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     {% else %}

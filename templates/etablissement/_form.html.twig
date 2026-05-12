@@ -1,4 +1,46 @@
+{# templates/etablissement/_form.html.twig #}
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    <div class="mb-3">
+        {{ form_label(form.nom) }}
+        {{ form_widget(form.nom) }}
+        {% if form.nom.vars.errors|length > 0 %}
+            <div class="text-danger mt-1">
+                {% for error in form.nom.vars.errors %}
+                    <small>{{ error.message }}</small>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="mb-3">
+        {{ form_label(form.ville) }}
+        {{ form_widget(form.ville) }}
+        {% if form.ville.vars.errors|length > 0 %}
+            <div class="text-danger mt-1">
+                {% for error in form.ville.vars.errors %}
+                    <small>{{ error.message }}</small>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="mb-3">
+        {{ form_label(form.adresse) }}
+        {{ form_widget(form.adresse) }}
+        {% if form.adresse.vars.errors|length > 0 %}
+            <div class="text-danger mt-1">
+                {% for error in form.adresse.vars.errors %}
+                    <small>{{ error.message }}</small>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="mb-3">
+        {{ form_label(form.image) }}
+        {{ form_widget(form.image) }}
+        <small class="text-muted">Entrez une URL d'image (ex: https://example.com/image.jpg)</small>
+    </div>
+
+    {{ form_widget(form.submit) }}
 {{ form_end(form) }}

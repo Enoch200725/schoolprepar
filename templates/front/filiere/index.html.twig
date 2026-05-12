@@ -14,8 +14,11 @@
             {% for filiere in filieres %}
             <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
                 <div class="card h-100">
-                    <img src="{{ asset('front/img/filieres/' ~ filiere.nom ~ '.jpg') }}" class="card-img-top" alt="{{ filiere.nom }}" style="height: 200px; object-fit: cover;"
-                         onerror="this.src='{{ asset('front/img/course/1.png') }}'" />
+                    {% if filiere.image %}
+                        <img src="{{ filiere.image }}" class="card-img-top" alt="{{ filiere.nom }}" style="height: 200px; object-fit: cover;" />
+                    {% else %}
+                        <img src="{{ asset('front/img/course/1.png') }}" class="card-img-top" alt="{{ filiere.nom }}" style="height: 200px; object-fit: cover;" />
+                    {% endif %}
                     <div class="card-body">
                         <h4 class="card-title">{{ filiere.nom }}</h4>
                         <p class="card-text"><strong>Code :</strong> {{ filiere.code }}</p>

@@ -1,4 +1,40 @@
+{# templates/conseiller/_form.html.twig #}
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    <div class="mb-3">
+        {{ form_label(form.nom) }}
+        {{ form_widget(form.nom) }}
+        {% if form.nom.vars.errors|length > 0 %}
+            <div class="text-danger mt-1">
+                {% for error in form.nom.vars.errors %}
+                    <small>{{ error.message }}</small>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="mb-3">
+        {{ form_label(form.age) }}
+        {{ form_widget(form.age) }}
+        {% if form.age.vars.errors|length > 0 %}
+            <div class="text-danger mt-1">
+                {% for error in form.age.vars.errors %}
+                    <small>{{ error.message }}</small>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="mb-3">
+        {{ form_label(form.role) }}
+        {{ form_widget(form.role) }}
+        {% if form.role.vars.errors|length > 0 %}
+            <div class="text-danger mt-1">
+                {% for error in form.role.vars.errors %}
+                    <small>{{ error.message }}</small>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    {{ form_widget(form.submit) }}
 {{ form_end(form) }}

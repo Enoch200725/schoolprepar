@@ -1,4 +1,57 @@
+{# templates/enseignant/_form.html.twig #}
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    <div class="mb-3">
+        {{ form_label(form.nom) }}
+        {{ form_widget(form.nom) }}
+        {% if form.nom.vars.errors|length > 0 %}
+            <div class="text-danger mt-1">
+                {% for error in form.nom.vars.errors %}
+                    <small>{{ error.message }}</small>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="mb-3">
+        {{ form_label(form.prenom) }}
+        {{ form_widget(form.prenom) }}
+        {% if form.prenom.vars.errors|length > 0 %}
+            <div class="text-danger mt-1">
+                {% for error in form.prenom.vars.errors %}
+                    <small>{{ error.message }}</small>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="mb-3">
+        {{ form_label(form.cours) }}
+        {{ form_widget(form.cours) }}
+        {% if form.cours.vars.errors|length > 0 %}
+            <div class="text-danger mt-1">
+                {% for error in form.cours.vars.errors %}
+                    <small>{{ error.message }}</small>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="mb-3">
+        {{ form_label(form.code) }}
+        {{ form_widget(form.code) }}
+        {% if form.code.vars.errors|length > 0 %}
+            <div class="text-danger mt-1">
+                {% for error in form.code.vars.errors %}
+                    <small>{{ error.message }}</small>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="mb-3">
+        {{ form_label(form.etudiants) }}
+        {{ form_widget(form.etudiants) }}
+    </div>
+
+    {{ form_widget(form.submit) }}
 {{ form_end(form) }}
